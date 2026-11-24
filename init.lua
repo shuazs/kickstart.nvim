@@ -736,6 +736,7 @@ do
     -- clangd = {},
     -- gopls = {},
     -- pyright = {},
+    -- ruff = {},
     -- tsc = {},
     --
     -- Some languages (like rust) have entire language plugins that can be useful:
