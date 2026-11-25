@@ -157,6 +157,10 @@ do
   --   and `:help lua-guide-options`
   vim.o.list = true
   vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
+  vim.opt.tabstop = 2
+  vim.opt.shiftwidth = 2
+  vim.opt.softtabstop = 2
+  vim.opt.expandtab = true
 
   -- Preview substitutions live, as you type!
   vim.o.inccommand = 'split'
@@ -733,17 +737,17 @@ do
   --  See `:help lsp-config` for information about keys and how to configure
   ---@type table<string, vim.lsp.Config>
   local servers = {
-    -- clangd = {},
-    -- gopls = {},
-    -- pyright = {},
-    -- ruff = {},
-    -- tsc = {},
+    clangd = {},
+    --gopls = {},
+    pyright = {},
+    ruff = {},
+    tsc = {},
     --
     -- Some languages (like rust) have entire language plugins that can be useful:
     --    https://github.com/mrcjkb/rustaceanvim
     --
     -- But for many setups, the LSP (`rust_analyzer`) will work just fine
-    -- rust_analyzer = {},
+    rust_analyzer = {},
 
     stylua = {}, -- Used to format Lua code
 
